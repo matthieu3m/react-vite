@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/', // Ici je configure ma base PATH
+  build: {
+    minify: 'terser', //Utilise terser pour minifier
+    sourcemap: true, // Générer des sourcemaps
+  }
 })
