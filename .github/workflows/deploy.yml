@@ -1,5 +1,9 @@
 name: Deploy to GitHub Pages
 
+permissions:
+  contents: write
+
+
 on:
   push:
     branches:
@@ -30,3 +34,4 @@ jobs:
         with:
           branch: gh-pages  # branche où vous voulez déployer
           folder: dist  # dossier contenant les fichiers buildés
+          
