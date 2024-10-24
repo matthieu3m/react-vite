@@ -5,4 +5,7 @@ module.exports = {
     },
     moduleFileExtensions: ['js', 'jsx'],
     setupFilesAfterEnv: ['<rootDir>/setupTests.js'], // Pour configurer Testing Library
+    moduleNameMapper: {
+      '\\.(css|scss)$': 'jest-css-modules',
+    },
   };

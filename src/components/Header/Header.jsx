@@ -1,7 +1,7 @@
 import React from "react";
 import './Header.scss';
 
-const apiKey = import.meta.env.VITE_API_URL;
+const apiKey = process.env.VITE_API_URL;
 console.log(apiKey);
 
 function Header () {
