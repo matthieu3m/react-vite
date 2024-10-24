@@ -1,7 +1,8 @@
 import React from "react";
 import './Header.scss';
+import { getEnvVariable } from '../../utils/env';
 
-const apiKey = process.env.VITE_API_URL;
+const apiKey = getEnvVariable('VITE_API_URL');
 console.log(apiKey);
 
 function Header () {
