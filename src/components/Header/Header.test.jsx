@@ -18,6 +18,6 @@ test('renders header title and modifies it on button click', () => {
     const buttonElement = screen.getByRole('button', { name: /Modifier le Titre/i });
     fireEvent.click(buttonElement);
 
-    const modifiedTitleElement = screen.getByText(/Titre modifié après clic/i);
+    const modifiedTitleElement = screen.getByText(/Titre en H1 du Header/i);
     expect(modifiedTitleElement).toBeInTheDocument();
 });
